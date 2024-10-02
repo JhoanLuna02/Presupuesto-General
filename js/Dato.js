@@ -1,24 +1,26 @@
 class Dato{
-        constructor(descripcion, valor){
+        constructor(dato1, dato2){
 
-            this._descripcion = descripcion;
-            this._valor = valor;
+            this.descripcion = dato1;
+            this.valor = dato2;
         }
 
 
         //metodos get and set 
 
-        get descripcion(){
-            return this._descripcion;
+        // get: son los metodos que me permiten consultar
+        get dato1(){
+            return this.descripcion;
         }
-        set descripcion(descripcion){
-            this._descripcion = descripcion;
+        get dato2(){
+            return this.valor;
         }
 
-        get valor(){
-            return this._valor;
+        //set: permien modificar una variable
+        set dato1(dato1){
+            this.descripcion = dato1;
         }
-        set valor(valor){
-            return this._valor = valor;
+        set dato2(dato2){
+            this.valor = dato2;
         }
 }

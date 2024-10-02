@@ -32,14 +32,14 @@ header{
     color: #fff;
 }
 
-.presupuesto-titulo{
+.presupuestoTitulo{
     font-size: 40px;
     text-align: center;
     margin-bottom: 10px;
     font-weight: 400;
 }
 
-.presupuesto-valor {
+.presupuestoValor {
     font-weight: 300;
     font-size: 46px;
     text-align: center;
@@ -47,7 +47,7 @@ header{
     letter-spacing: 2px;
 }
 
-.limpiar-estilos::after {
+.limpiarEstilos::after {
     content: "";
     display: table;
     clear: both;
@@ -55,39 +55,39 @@ header{
 
 .derecha { float: right; }
 
-.presupuesto-ingreso,
-.presupuesto-egreso {
+.presupuestoIngreso,
+.presupuestoEgreso {
     padding: 12px;
     text-transform: uppercase;
 }
 
-.presupuesto-ingreso {
+.presupuestoIngreso {
     margin-bottom: 10px;
     background-color: #28B9B5;
 }
 
 
 
-.presupuesto-egreso {
+.presupuestoEgreso {
     background-color: #FF5049;
 }
 
-.presupuesto-ingreso-texto,
-.presupuesto-egreso-texto {
+.presupuestoIngresoTexto,
+.presupuestoEgresoTexto {
     float: left;
     font-size: 13px;
     color: #fff;
     margin-top: 2px;
 }
 
-.presupuesto-ingreso-valor,
-.presupuestoe-greso-valor {
+.presupuestoIngresoValor,
+.presupuestoEgresoValor {
     letter-spacing: 1px;
     float: left;
 }
 
-.presupuesto-ingreso-porcentaje,
-.presupuesto-egreso-porcentaje {
+.presupuestoIngresoPorcentaje,
+.presupuestoEgresoPorcentaje {
     float: left;
     width: 34px;
     font-size: 11px;
@@ -95,7 +95,7 @@ header{
     margin-left: 10px;
 }
 
-.presupuesto-greso-porcentaje {
+.presupuestoEgresoPorcentaje {
     background-color: rgba(255, 255, 255, 0.2);
     text-align: center;
     border-radius: 3px;
@@ -128,8 +128,8 @@ h2 {
     margin-bottom: 15px;
 }
 
-.ingreso-titulo { color: #28B9B5; }
-.egreso-titulo { color: #FF5049; }
+.ingresoTitulo { color: #28B9B5; }
+.egresoTitulo { color: #FF5049; }
 
 .elemento {
     padding: 13px;
@@ -139,25 +139,25 @@ h2 {
 .elemento:first-child { border-top: 1px solid #e7e7e7; }
 .elemento:nth-child(even) { background-color: #f7f7f7; }
 
-.elemento-descripcion {
+.elementoDescripcion {
     float: left;
 }
 
-.elemento-valor {
+.elementoValor {
     float: left;
     transition: transform 0.3s;
 }
 
-.ingreso .elemento-valor,
-.ingreso .elemento-eliminarBtn {
+.ingreso .elementoValor,
+.ingreso .elementoEliminarBtn {
     color: #28B9B5;
 }
 
-.elemento-eliminar {
+.elementoEliminar {
     float: left;
 }
 
-.elemento-eliminar-btn {
+.elementoEliminarBtn {
     font-size: 22px;
     background: none;
     border: none;
@@ -168,7 +168,7 @@ h2 {
     display: none;
 }
 
-.elemento-porcentaje {
+.elementoPorcentaje {
     float: left;
     margin-left: 20px;
     transition: transform 0.3s;
@@ -180,18 +180,18 @@ h2 {
     text-align: center;
 }
 
-.egreso .elemento-valor,
-.egreso .elemento-porcentaje,
-.egreso .elementoE-eliminar-btn {
+.egreso .elementoValor,
+.egreso .elementoPorcentaje,
+.egreso .elementoEliminarBtn {
     color: #FF5049;
 }
 
-.elemento-eliminar-btn:focus { outline: none; }
-.elemento-eliminar-btn:active { transform: translateY(2px); }
-.elemento:hover .elemento-eliminar-btn { display: block; }
+.elementoEliminarBtn:focus { outline: none; }
+.elementoEliminarBtn:active { transform: translateY(2px); }
+.elemento:hover .elementoEliminarBtn { display: block; }
 
-.elemento:hover .elemento-porcentaje { transform: translateX(-20px); }
-.elemento:hover .elemento-valor { transform: translateX(-20px); }
+.elemento:hover .elementoPorcentaje { transform: translateX(-20px); }
+.elemento:hover .elementoValor { transform: translateX(-20px); }
 
 /*Formulario*/
 
@@ -201,12 +201,12 @@ h2 {
     background-color: #f7f7f7;
 }
 
-.agregar-contenedor {
+.agregarContenedor {
     margin: 0 auto;
     text-align: center;
 }
 
-.agregar-tipo {
+.agregarTipo {
     width: 155px;
     border: 1px solid #e7e7e7;
     height: 44px;
@@ -218,8 +218,8 @@ h2 {
     transition: border 0.3s;
 }
 
-.agregar-descripcion,
-.agregar-valor {
+.agregarDescripcion,
+.agregarValor {
     border: 1px solid #e7e7e7;
     background-color: #fff;
     color: inherit;
@@ -231,11 +231,11 @@ h2 {
     transition: border 0.3s;
 }
 
-.agregar-descripcion { width: 400px;}
-.agregar-valor { width: 100px;}
+.agregarDescripcion { width: 400px;}
+.agregarValor { width: 100px;}
 
 
-.agregar-btn {
+.agregarBtn {
     font-size: 35px;
     background: none;
     border: none;
@@ -247,15 +247,15 @@ h2 {
     margin-left: 10px;
 }
 
-.agregar-btn:active { transform: translateY(2px); }
+.agregarBtn:active { transform: translateY(2px); }
 
-.agregar-tipo:focus,
-.agregar-descripcion:focus,
-.agregar-valor:focus {
+.agregarTipo:focus,
+.agregarDescripcion:focus,
+.agregarValor:focus {
     outline: none;
     border: 1px solid #28B9B5;
 }
 
-.agregar-btn:focus { outline: none; }
+.agregarBtn:focus { outline: none; }
 
 

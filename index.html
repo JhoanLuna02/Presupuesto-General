@@ -1,42 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Presupeusto</title>
-    <link rel="stylesheet" href="./css/styles.css">
+
+    <!--Fuentes de Google-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-        rel="stylesheet">
-</head>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
 
-<body onload="cargarApp()">
+    <!--Estilos CSS propios-->
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Presupuesto General</title>
+</head>
+<body onload='cargarApp()'>
 
     <header>
         <div class="presupuesto">
-            <h1 class="presupuesto-titulo">Dinero dispinible</h1>
-            <div class="presupuesto-valor" id="presupuesto">
+            <h1 class="presupuestoTitulo">
+                Dinero Disponible
+            </h1>
+
+            <div class="presupuestoValor" id="presupuesto">
                 + 2.000.000
             </div>
-            <div class="presupuesto-ingreso limpiar-estilos">
-                <div class="presupuesto-ingreso-texto">INGRESOS</div>
+
+            <!--Ingresos-->
+            <div class="presupuestoIngreso  limpiarEstilos">
+                <div class="presupuestoIngresoTexto">Ingresos</div>
                 <div class="derecha">
-                    <div class="presupuesto-ingreso-valor" id="ingresos">4000</div>
-                    <div class="presupuesto-ingreso-porcentaje">2</div>
+                    <div class="presupuestoIngresoValor" id="ingresos">0</div>
+                    <div class="presupuestoIngresoPorcentaje"></div>
                 </div>
             </div>
-            <div class="presupuesto-egreso limpiar-estilos">
-                <div class="presupuesto-egreso-texto">INGRESOS</div>
+
+            <!--Egresos-->
+            <div class="presupuestoEgreso  limpiarEstilos">
+                <div class="presupuestoEgresoTexto">Egresos</div>
                 <div class="derecha">
-                    <div class="presupuesto-egreso-valor" id="egresos">4000</div>
-                    <div class="presupuesto-egreso-porcentaje">2</div>
+                    <div class="presupuestoEgresoValor" id="egresos">0</div>
+                    <div class="presupuestoEgresoPorcentaje" id="porcentajeEgreso"></div>
                 </div>
             </div>
         </div>
     </header>
-</body>
+
+<section class="contenedor limpiarEstilos">
+    <!--INGRESOS-->
+    <div class="ingreso">
+        <h2 class="ingresoTitulo">INGRESOS</h2>
+        <div class="listaIngresos" id="listaIngreso">
+            
+        </div>
+    </div>
+    <!--EGRESOS-->
+    <div class="egreso">
+        <h2 class="egresoTitulo">INGRESOS</h2>
+        <div class="listaEgresos">
+            <div class="elemento limpiarEstilos">
+                <div class="elementoDescripcion">Salario</div>
+                <div class="derecha limpiarEstilos">
+                    <div class="elementoValor">5000</div>
+                    <div class="elementoPorcentaje">10%</div>
+                    <div class="elementoEliminar">
+                        <button class="elementoEliminarBtn">X</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <script src="./js/Dato.js"></script>
